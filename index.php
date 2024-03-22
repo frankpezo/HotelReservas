@@ -5,7 +5,7 @@ require_once 'config/config.php';
 //1.2. CAPTURAR RUTA ACTUAL
 // Para saber en qué rutas estamos 
 $currentPageUrl = $_SERVER['REQUEST_URI'];
-echo $currentPageUrl . '</br>';
+//echo $currentPageUrl . '</br>';
 //VERFICAR SI EXISTE LA RUTA ADMIN
 $isAdmin = strpos($currentPageUrl, '/'. ADMIN) !== false;
 //echo $isAdmin;
@@ -30,9 +30,40 @@ if($isAdmin && (count($array) == 1
    $controller  = ucfirst($array[$indiceUrl]);
    $metodo = "index";
 }
-
+/* 
 echo "Nombe controlador: ". $controller . '<br>';
-
 echo "Nombe método: ". $metodo;
+ */
+//1.5. Validar métodos 
+$metodoIndice = ($isAdmin) ? 2 : 1;
+if(!empty($array[$metodoIndice]) && $array[$metodoIndice] != ''){
+    $metodo = $array[$metodoIndice];
+}
+//echo $metodo;
 
+$parametro = '';
+$parametroIndice = ($isAdmin) ? 3 : 2;
+if(!empty($array[$metodoIndice]) && $array[$metodoIndice] != ''){
+    for($i= $parametroIndice; $i< count($array); $i++){
+        $parametro .=  $array[$i]. ', ';
+    }
+    $parametro = trim($parametro, ', ');
+  //  echo $parametro;
+}
+
+//1.6. Validar directorios de controladores
+$dirController = ($isAdmin) ? 'controllers/admin/'. $controller. '.php' : 'controllers/principal/'. $controller. '.php';
+//echo $dirController;
+if(file_exists($dirController)){
+    require_once $dirController;
+    $controller = new $controller();
+    //
+    if(method_exists($controller, $metodo)){
+          $controller->$metodo($parametro);
+    }else{
+        echo "MÉTODO NO EXISTE";
+    }
+}else{
+    echo "CONTROLADOR NO EXISTE";
+}
 ?>
