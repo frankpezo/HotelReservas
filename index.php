@@ -4,10 +4,10 @@
 require_once 'config/config.php';
 //1.2. CAPTURAR RUTA ACTUAL
 // Para saber en qué rutas estamos 
-$currentPageUrl = $_SERVER['REQUEST_URI'];
+//$currentPageUrl = $_SERVER['REQUEST_URI'];
 //echo $currentPageUrl . '</br>';
 //VERFICAR SI EXISTE LA RUTA ADMIN
-$isAdmin = strpos($currentPageUrl, '/'. ADMIN) !== false;
+$isAdmin = strpos($_SERVER['REQUEST_URI'], '/'. ADMIN) !== false;
 //echo $isAdmin;
 //1.1. COMPROBAR SI EXISTE GET PARA CREAR URL AMIGABLES 
 //Comprobamos si funciona la ruta
@@ -23,7 +23,7 @@ if($isAdmin && (count($array) == 1
 || (count($array)== 2 && empty($array[1])))
 && $array[0]==ADMIN){
    //1.4.1. Controlador
-   $controller = "admin";
+   $controller = "Admin";
    $metodo = "login";
 }else{
    $indiceUrl = ($isAdmin)  ? 1 : 0 ; 
@@ -43,13 +43,15 @@ if(!empty($array[$metodoIndice]) && $array[$metodoIndice] != ''){
 
 $parametro = '';
 $parametroIndice = ($isAdmin) ? 3 : 2;
-if(!empty($array[$metodoIndice]) && $array[$metodoIndice] != ''){
+if(!empty($array[$parametroIndice]) && $array[$parametroIndice] != ''){
     for($i= $parametroIndice; $i< count($array); $i++){
         $parametro .=  $array[$i]. ', ';
     }
     $parametro = trim($parametro, ', ');
   //  echo $parametro;
 }
+//2. LLamamos la función que contiene el AUTOLOAD de config/app
+require_once 'config/app/Autoload.php';
 
 //1.6. Validar directorios de controladores
 $dirController = ($isAdmin) ? 'controllers/admin/'. $controller. '.php' : 'controllers/principal/'. $controller. '.php';
