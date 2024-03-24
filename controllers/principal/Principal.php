@@ -9,7 +9,8 @@ class Principal extends Controller{
     function index(){
         //1.1. Método del constructor
        $data =  $this->model->getPrueba();
-         echo $data; 
+        // echo $data; 
+     $this->views->getView("principal", 'index', $data);
     }
 
     

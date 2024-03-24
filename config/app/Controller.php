@@ -4,8 +4,10 @@
 class Controller{
     //1.1. 
     protected $model;
+    protected $views;
    //
    public function __construct(){
+     $this->views = new Views();
      $this->cargarModel();
    }
     //1.2. Comprobar si nos encontramos el url Admin
