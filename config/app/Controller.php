@@ -14,7 +14,7 @@ class Controller{
      public function cargarModel(){
         $isAdmin = strpos($_SERVER['REQUEST_URI'], '/'. ADMIN) !== false;
         $nombremodel = get_class($this) . 'Model';
-        $ruta = ($isAdmin) ? 'models/admin/' . $nombremodel. '.php' : 'models/principal/' .  $nombremodel. '.php';
+        $ruta = ($isAdmin) ? 'models/admin/' . $nombremodel. '.php' : 'models/principal/' .$nombremodel.'.php';
         //1.2.1 Comprobamos si existe
         if(file_exists($ruta)){
              require_once $ruta;
