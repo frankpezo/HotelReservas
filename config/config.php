@@ -9,7 +9,7 @@ define('USER', 'root');
 define('PASS', '');
 define('DATABASE', 'hotelreservas');
 define('CHARSET', 'charset=utf8' );
-
+define("TITLE", "Stylus Hotel")
 
 
 ?>
