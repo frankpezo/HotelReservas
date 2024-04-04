@@ -1,7 +1,90 @@
 <?php
 //1. Incluimos el header
-echo include_once 'views/template/header-principal.php';
+ include_once 'views/template/header-principal.php';
 ?>
+
+		<!-- Start Ecorik Slider Area -->
+		<section class="eorik-slider-area">
+			<div class="eorik-slider owl-carousel owl-theme">
+				<div class="eorik-slider-item slider-item-bg-1">
+					<div class="d-table">
+						<div class="d-table-cell">
+							<div class="container">
+								<div class="eorik-slider-text overflow-hidden one eorik-slider-text-one">
+									<h1>Relax Vacation</h1>
+									<span>Discover the place where you have fun & enjoy a lot</span>
+									<div class="slider-btn">
+										<a class="default-btn" href="#">
+											Book To Stay
+											<i class="flaticon-right"></i>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="eorik-slider-item slider-item-bg-2">
+					<div class="d-table">
+						<div class="d-table-cell">
+							<div class="container">
+								<div class="eorik-slider-text overflow-hidden two eorik-slider-text-one">
+									<h1>Take Vacations</h1>
+									<span>Discover the place where you have fun & enjoy a lot</span>
+									<div class="slider-btn">
+										<a class="default-btn" href="#">
+											Book To Stay
+											<i class="flaticon-right"></i>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="eorik-slider-item slider-item-bg-3">
+					<div class="d-table">
+						<div class="d-table-cell">
+							<div class="container">
+								<div class="eorik-slider-text overflow-hidden three eorik-slider-text-one">
+									<h1>Favorite Vacation</h1>
+									<span>Discover the place where you have fun & enjoy a lot</span>
+									<div class="slider-btn">
+										<a class="default-btn" href="#">
+											Book To Stay
+											<i class="flaticon-right"></i>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="white-shape">
+				<img src="<?php  echo RUTA_PRINCIPAL . 'assets/principal/'; ?>/img/home-one/slider/white-shape.png" alt="Image">
+			</div>
+			<div class="social-link">
+				<ul>
+					<li>
+						<a href="#">
+							<i class="bx bxl-facebook"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="bx bxl-twitter"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="bx bxl-linkedin"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<!-- End Ecorik Slider Area -->
 		<!-- Start Check Area -->
         <div class="check-area mb-minus-70">
             <div class="container">
@@ -701,6 +784,128 @@ echo include_once 'views/template/header-principal.php';
 			</div>
 		</section>
 		<!-- End Testimonials Area -->
+
+		
+		<!-- End News Area -->
+		<section class="news-area pb-60">
+			<div class="container">
+				<div class="section-title">
+					<span>Our BLog</span>
+					<h2>News & articles updates </h2>
+				</div>
+				<div class="row">
+					<div class="col-lg-4 col-md-6">
+						<div class="single-news">
+							<div class="news-img">
+								<a href="news-details.html">
+									<img src="<?php  echo RUTA_PRINCIPAL . 'assets/principal/'; ?>/img/news/1.jpg" alt="Image">
+								</a>
+								<div class="dates">
+									<span>HOTEL</span>
+								</div>
+							</div>
+							<div class="news-content-wrap">
+								<ul>
+									<li>
+										<a href="#">
+											<i class="flaticon-user"></i>
+											Admin
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="flaticon-conversation"></i>
+											Comment
+										</a>
+									</li>
+								</ul>
+								<a href="news-details.html">
+									<h3>Celebrating Decade Years Of Hotel In 2020</h3>
+								</a>
+								<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga veritatis veniam corrupti perferendis.</p>
+								<a class="read-more" href="news-details.html">
+									Read More
+									<i class="flaticon-right"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6">
+						<div class="single-news">
+							<div class="news-img">
+								<a href="news-details.html">
+									<img src="<?php  echo RUTA_PRINCIPAL . 'assets/principal/'; ?>/img/news/2.jpg" alt="Image">
+								</a>
+								<div class="dates">
+									<span>PRICE</span>
+								</div>
+							</div>
+							<div class="news-content-wrap">
+								<ul>
+									<li>
+										<a href="#">
+											<i class="flaticon-user"></i>
+											Admin
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="flaticon-conversation"></i>
+											Comment
+										</a>
+									</li>
+								</ul>
+								<a href="news-details.html">
+									<h3>A Perfect Day With Businessman At Ecorik Hotel</h3>
+								</a>
+								<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga veritatis veniam corrupti perferendis.</p>
+								<a class="read-more" href="news-details.html">
+									Read More
+									<i class="flaticon-right"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0">
+						<div class="single-news">
+							<div class="news-img">
+								<a href="news-details.html">
+									<img src="<?php  echo RUTA_PRINCIPAL . 'assets/principal/'; ?>/img/news/1.jpg" alt="Image">
+								</a>
+								<div class="dates">
+									<span>STORE</span>
+								</div>
+							</div>
+							<div class="news-content-wrap">
+								<ul>
+									<li>
+										<a href="#">
+											<i class="flaticon-user"></i>
+											Admin
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="flaticon-conversation"></i>
+											Comment
+										</a>
+									</li>
+								</ul>
+								<a href="news-details.html">
+									<h3>Celebrating Decade Years Of Hotel In 2019</h3>
+								</a>
+								<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga veritatis veniam corrupti perferendis.</p>
+								<a class="read-more" href="news-details.html">
+									Read More
+									<i class="flaticon-right"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End News Area -->
 
 
 <?php
