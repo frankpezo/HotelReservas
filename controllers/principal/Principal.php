@@ -10,7 +10,10 @@ class Principal extends Controller{
         //1.1. Método del constructor
        $data =  $this->model->getPrueba();
         // echo $data; 
-     print_r($data);
+        //Enviamos el valor especial
+     $data = strClean('    <script> hola');
+    /*    $data = slugify("Hola a todo el mundo");
+     print_r($data); */
      $this->views->getView("principal", 'index', $data);
     }
 

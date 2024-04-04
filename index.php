@@ -2,6 +2,8 @@
 //Manejo de rutas
 //1. Requerimos el archivo config
 require_once 'config/config.php';
+//2. 
+require_once 'helpers/funciones.php';
 //1.2. CAPTURAR RUTA ACTUAL
 // Para saber en qué rutas estamos 
 //$currentPageUrl = $_SERVER['REQUEST_URI'];

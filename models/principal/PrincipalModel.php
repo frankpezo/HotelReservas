@@ -11,7 +11,7 @@ class PrincipalModel extends Query{
     //
     public function getPrueba(){
        //Llmamos los métodos
-       return $this->select("SELECT * FROM usuarios WHERE idUser=1");
+       return $this->select("SELECT * FROM usuarios WHERE id=1");
       
     }
 }
