@@ -9,9 +9,9 @@ class PrincipalModel extends Query{
 
 
     //
-    public function getPrueba(){
+    public function getSliders(){
        //Llmamos los métodos
-       return $this->select("SELECT * FROM usuarios WHERE id=1");
+       return $this->selectAll("SELECT * FROM sliders ");
       
     }
 }

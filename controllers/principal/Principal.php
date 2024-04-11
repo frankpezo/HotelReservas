@@ -15,6 +15,12 @@ class Principal extends Controller{
     /*    $data = slugify("Hola a todo el mundo");
      print_r($data); */ 
      $data['title'] = "Página principal";
+     //2. Realizamos una consulta a la bd para 
+     // traer el Slider
+     $data['sliders'] = $this->model->getSliders();
+    /*  print_r($data);
+     exit; */
+
      $this->views->getView("index",  $data);
     }
 

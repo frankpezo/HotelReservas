@@ -123,6 +123,7 @@ Default Style
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,400i,500,600,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=DM+Serif+Display:400,400i&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Muli:300,300i,400,400i,500,500i,600,600i,700,700i,800&display=swap");
+
 body {
   padding: 0;
   margin: 0;
@@ -151,16 +152,27 @@ a:focus {
 button {
   outline: 0 !important;
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   border: none;
 }
 
 button:focus {
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: #24416b;
   font-family: "DM Serif Display", serif;
   font-weight: 700;
@@ -231,14 +243,15 @@ ul {
   color: #000000;
   background-color: transparent;
   -webkit-box-shadow: unset;
-          box-shadow: unset;
+  box-shadow: unset;
   outline: 0;
   border: 1px solid #cc8c18;
 }
 
-.form-control:hover:focus, .form-control:focus {
+.form-control:hover:focus,
+.form-control:focus {
   -webkit-box-shadow: unset;
-          box-shadow: unset;
+  box-shadow: unset;
 }
 
 textarea.form-control {
@@ -360,7 +373,7 @@ Go Top Style
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -437,7 +450,7 @@ Go Top Style
 .go-top.active {
   top: 98%;
   -webkit-transform: translateY(-98%);
-          transform: translateY(-98%);
+  transform: translateY(-98%);
   opacity: 1;
   visibility: visible;
 }
@@ -455,7 +468,7 @@ Page-navigation Area Style
   color: #cc8c18;
   background-color: #ffffff;
   -webkit-box-shadow: 0 0 15px #d0d0d0;
-          box-shadow: 0 0 15px #d0d0d0;
+  box-shadow: 0 0 15px #d0d0d0;
   width: 40px;
   height: 40px;
   border: 1px solid #ffffff;
@@ -480,7 +493,7 @@ Page-navigation Area Style
   z-index: 2;
   outline: 0;
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 .page-navigation-area .page-link.page-links i::before {
@@ -531,11 +544,11 @@ Video wave Style
   top: 0px;
   left: 3px;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -543,7 +556,8 @@ Video wave Style
   height: 100%;
 }
 
-.video-btn::after, .video-btn::before {
+.video-btn::after,
+.video-btn::before {
   content: '';
   display: block;
   position: absolute;
@@ -558,12 +572,12 @@ Video wave Style
 
 .video-btn::before {
   -webkit-animation: ripple 1.6s ease-out infinite;
-          animation: ripple 1.6s ease-out infinite;
+  animation: ripple 1.6s ease-out infinite;
 }
 
 .video-btn::after {
   -webkit-animation: ripple 1.6s ease-out infinite;
-          animation: ripple 1.6s ease-out infinite;
+  animation: ripple 1.6s ease-out infinite;
 }
 
 .video-btn:hover {
@@ -575,38 +589,46 @@ Video wave Style
 }
 
 @-webkit-keyframes ripple {
-  0%, 35% {
+
+  0%,
+  35% {
     -webkit-transform: scale(0);
-            transform: scale(0);
+    transform: scale(0);
     opacity: 1;
   }
+
   50% {
     -webkit-transform: scale(1.5);
-            transform: scale(1.5);
+    transform: scale(1.5);
     opacity: 0.8;
   }
+
   100% {
     opacity: 0;
     -webkit-transform: scale(2);
-            transform: scale(2);
+    transform: scale(2);
   }
 }
 
 @keyframes ripple {
-  0%, 35% {
+
+  0%,
+  35% {
     -webkit-transform: scale(0);
-            transform: scale(0);
+    transform: scale(0);
     opacity: 1;
   }
+
   50% {
     -webkit-transform: scale(1.5);
-            transform: scale(1.5);
+    transform: scale(1.5);
     opacity: 0.8;
   }
+
   100% {
     opacity: 0;
     -webkit-transform: scale(2);
-            transform: scale(2);
+    transform: scale(2);
   }
 }
 
@@ -652,7 +674,7 @@ Default Btn Area Style
 .default-btn:hover i {
   background-color: #f5ddb3;
   -webkit-animation: fadeInLeft 1s linear;
-          animation: fadeInLeft 1s linear;
+  animation: fadeInLeft 1s linear;
 }
 
 /*
@@ -690,7 +712,7 @@ Read More Area Style
 .read-more:hover i {
   color: #cc8c18;
   -webkit-animation: fadeInLeft 1s linear;
-          animation: fadeInLeft 1s linear;
+  animation: fadeInLeft 1s linear;
 }
 
 /*
@@ -743,7 +765,7 @@ Preloader Area Style
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .preloader .lds-ripple div {
@@ -752,12 +774,12 @@ Preloader Area Style
   opacity: 1;
   border-radius: 50%;
   -webkit-animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
-          animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
 }
 
 .preloader .lds-ripple div:nth-child(2) {
   -webkit-animation-delay: -0.5s;
-          animation-delay: -0.5s;
+  animation-delay: -0.5s;
 }
 
 @-webkit-keyframes lds-ripple {
@@ -768,6 +790,7 @@ Preloader Area Style
     height: 0;
     opacity: 1;
   }
+
   100% {
     top: -1px;
     left: -1px;
@@ -785,6 +808,7 @@ Preloader Area Style
     height: 0;
     opacity: 1;
   }
+
   100% {
     top: -1px;
     left: -1px;
@@ -800,81 +824,92 @@ Keyframes Area Style
 @-webkit-keyframes moveLeftBounces {
   0% {
     -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
   }
+
   50% {
     -webkit-transform: translateX(45px);
-            transform: translateX(45px);
+    transform: translateX(45px);
   }
+
   100% {
     -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
   }
 }
+
 @keyframes moveLeftBounces {
   0% {
     -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
   }
+
   50% {
     -webkit-transform: translateX(45px);
-            transform: translateX(45px);
+    transform: translateX(45px);
   }
+
   100% {
     -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
   }
 }
 
 @-webkit-keyframes moVebounce {
   0% {
     -webkit-transform: translateX(0px);
-            transform: translateX(0px);
+    transform: translateX(0px);
   }
+
   50% {
     -webkit-transform: translateX(-10px);
-            transform: translateX(-10px);
+    transform: translateX(-10px);
   }
+
   100% {
     -webkit-transform: translateX(0px);
-            transform: translateX(0px);
+    transform: translateX(0px);
   }
 }
 
 @keyframes moVebounce {
   0% {
     -webkit-transform: translateX(0px);
-            transform: translateX(0px);
+    transform: translateX(0px);
   }
+
   50% {
     -webkit-transform: translateX(-10px);
-            transform: translateX(-10px);
+    transform: translateX(-10px);
   }
+
   100% {
     -webkit-transform: translateX(0px);
-            transform: translateX(0px);
+    transform: translateX(0px);
   }
 }
 
 @-webkit-keyframes rotation {
   from {
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
+
   to {
     -webkit-transform: rotate(359deg);
-            transform: rotate(359deg);
+    transform: rotate(359deg);
   }
 }
 
 @keyframes rotation {
   from {
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
+
   to {
     -webkit-transform: rotate(359deg);
-            transform: rotate(359deg);
+    transform: rotate(359deg);
   }
 }
 
@@ -887,7 +922,7 @@ Keyframes Area Style
   -webkit-transition: all 1s;
   transition: all 1s;
   -webkit-animation: none;
-          animation: none;
+  animation: none;
 }
 
 .bx-fade-right {
@@ -899,7 +934,7 @@ Keyframes Area Style
   -webkit-transition: all 1s;
   transition: all 1s;
   -webkit-animation: none;
-          animation: none;
+  animation: none;
 }
 
 .nice-select .list {
@@ -964,12 +999,12 @@ Eorik Nav Area Style
 
 .eorik-nav-style .navbar-area .main-nav nav .navbar-nav .nav-item a.active i {
   -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
+  transform: rotate(-90deg);
 }
 
 .eorik-nav-style .navbar-area .main-nav nav .navbar-nav .nav-item a.active::before {
   -webkit-transform: scale(1);
-          transform: scale(1);
+  transform: scale(1);
 }
 
 .eorik-nav-style .navbar-area .main-nav nav .navbar-nav .nav-item:hover a {
@@ -978,7 +1013,7 @@ Eorik Nav Area Style
 
 .eorik-nav-style .navbar-area .main-nav nav .navbar-nav .nav-item:hover a i {
   -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
+  transform: rotate(-90deg);
 }
 
 .eorik-nav-style .navbar-area .main-nav nav .navbar-nav .nav-item .dropdown-menu {
@@ -1045,7 +1080,7 @@ Eorik Nav Area Style
 
 .eorik-nav-style .navbar-area .main-nav nav .navbar-nav .nav-item .dropdown-menu li a.active::before {
   -webkit-transform: scale(1);
-          transform: scale(1);
+  transform: scale(1);
 }
 
 .eorik-nav-style .navbar-area .main-nav nav .navbar-nav .nav-item .dropdown-menu li .dropdown-menu {
@@ -1086,9 +1121,9 @@ Eorik Nav Area Style
   z-index: 999;
   background-color: #313538;
   -webkit-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.4);
-          box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.4);
   -webkit-animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
-          animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
+  animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
   -webkit-transition: all .5s;
   transition: all .5s;
   width: 100% !important;
@@ -1137,7 +1172,7 @@ Eorik SliderArea Style
   transition: all 0.5s;
   opacity: 0;
   -webkit-transform: translateY(-10px);
-          transform: translateY(-10px);
+  transform: translateY(-10px);
 }
 
 .eorik-slider-area .owl-next i {
@@ -1167,7 +1202,7 @@ Eorik SliderArea Style
   transition: all 0.5s;
   opacity: 0;
   -webkit-transform: translateY(-10px);
-          transform: translateY(-10px);
+  transform: translateY(-10px);
 }
 
 .eorik-slider-area .owl-prev i {
@@ -1210,7 +1245,7 @@ Eorik SliderArea Style
   z-index: 1;
 }
 
-.eorik-slider-area .owl-theme .owl-nav.disabled + .owl-dots {
+.eorik-slider-area .owl-theme .owl-nav.disabled+.owl-dots {
   margin-top: 0;
   position: absolute;
   right: 0;
@@ -1218,28 +1253,28 @@ Eorik SliderArea Style
   bottom: 110px;
 }
 
-.eorik-slider-area .owl-theme .owl-nav.disabled + .owl-dots .owl-dot span {
+.eorik-slider-area .owl-theme .owl-nav.disabled+.owl-dots .owl-dot span {
   width: 20px;
   height: 20px;
   margin: 5px 7px;
   background: #D6D6D6;
   border-radius: 0;
   -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-          clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
-.eorik-slider-area .owl-theme .owl-nav.disabled + .owl-dots .owl-dot:hover span {
+.eorik-slider-area .owl-theme .owl-nav.disabled+.owl-dots .owl-dot:hover span {
   background: #cc8c18;
 }
 
-.eorik-slider-area .owl-theme .owl-nav.disabled + .owl-dots .owl-dot.active span {
+.eorik-slider-area .owl-theme .owl-nav.disabled+.owl-dots .owl-dot.active span {
   background: #cc8c18;
   -webkit-clip-path: polygon(49% 0, 100% 48%, 70% 48%, 71% 100%, 29% 100%, 29% 48%, 0 48%);
-          clip-path: polygon(49% 0, 100% 48%, 70% 48%, 71% 100%, 29% 100%, 29% 48%, 0 48%);
+  clip-path: polygon(49% 0, 100% 48%, 70% 48%, 71% 100%, 29% 100%, 29% 48%, 0 48%);
   -webkit-animation: fadeInUp 0.5s linear;
-          animation: fadeInUp 0.5s linear;
+  animation: fadeInUp 0.5s linear;
 }
 
 .eorik-slider-area .social-link {
@@ -1248,7 +1283,7 @@ Eorik SliderArea Style
   right: 50px;
   z-index: 1;
   -webkit-transform: translateY(-30%);
-          transform: translateY(-30%);
+  transform: translateY(-30%);
 }
 
 .eorik-slider-area .social-link ul li {
@@ -1272,12 +1307,12 @@ Eorik SliderArea Style
 
 .eorik-slider-area .social-link ul li a:hover {
   -webkit-animation: rubberBand 1s linear;
-          animation: rubberBand 1s linear;
+  animation: rubberBand 1s linear;
 }
 
 .eorik-slider-area .social-link ul li a:hover i {
   -webkit-animation: fadeInLeft 0.5s linear;
-          animation: fadeInLeft 0.5s linear;
+  animation: fadeInLeft 0.5s linear;
 }
 
 .eorik-slider-item {
@@ -1339,52 +1374,49 @@ Eorik SliderArea Style
 
 .eorik-slider-area .owl-item.active .eorik-slider-text.one h1 {
   -webkit-animation: 1s .1s fadeInUpBig both;
-          animation: 1s .1s fadeInUpBig both;
+  animation: 1s .1s fadeInUpBig both;
 }
 
 .eorik-slider-area .owl-item.active .eorik-slider-text.one span {
   -webkit-animation: 2s .2s fadeInUpBig both;
-          animation: 2s .2s fadeInUpBig both;
+  animation: 2s .2s fadeInUpBig both;
 }
 
 .eorik-slider-area .owl-item.active .eorik-slider-text.one .slider-btn {
   -webkit-animation: 3s .3s fadeInUpBig both;
-          animation: 3s .3s fadeInUpBig both;
+  animation: 3s .3s fadeInUpBig both;
 }
 
 .eorik-slider-area .owl-item.active .eorik-slider-text.two h1 {
   -webkit-animation: 2s .2s fadeInLeft both;
-          animation: 2s .2s fadeInLeft both;
+  animation: 2s .2s fadeInLeft both;
 }
 
 .eorik-slider-area .owl-item.active .eorik-slider-text.two span {
   -webkit-animation: 2s .2s fadeInDownBig both;
-          animation: 2s .2s fadeInDownBig both;
+  animation: 2s .2s fadeInDownBig both;
 }
 
 .eorik-slider-area .owl-item.active .eorik-slider-text.two .slider-btn {
   -webkit-animation: 2s .2s fadeInUpBig both;
-          animation: 2s .2s fadeInUpBig both;
+  animation: 2s .2s fadeInUpBig both;
 }
 
 .eorik-slider-area .owl-item.active .eorik-slider-text.three h1 {
   -webkit-animation: 2s .2s fadeInDown both;
-          animation: 2s .2s fadeInDown both;
+  animation: 2s .2s fadeInDown both;
 }
 
 .eorik-slider-area .owl-item.active .eorik-slider-text.three span {
   -webkit-animation: 2s .2s fadeInDown both;
-          animation: 2s .2s fadeInDown both;
+  animation: 2s .2s fadeInDown both;
 }
 
 .eorik-slider-area .owl-item.active .eorik-slider-text.three .slider-btn {
   -webkit-animation: 2s .2s fadeInUp both;
-          animation: 2s .2s fadeInUp both;
+  animation: 2s .2s fadeInUp both;
 }
 
-.slider-item-bg-1 {
-  background-image: url(../img/home-one/slider/slider-img-1.jpg);
-}
 
 .slider-item-bg-2 {
   background-image: url(../img/home-one/slider/slider-img-2.jpg);
@@ -1408,7 +1440,7 @@ Check Area Style
 .check-content {
   background-color: #ffffff;
   -webkit-box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
-          box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
   padding: 20px;
 }
 
@@ -1477,7 +1509,7 @@ Check Area Style
   border: 1px solid #cc8c18;
   outline: 0;
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 .check-content .form-group .form-content {
@@ -1501,7 +1533,7 @@ Check Area Style
   border: 1px solid #cc8c18;
   outline: 0;
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 .check-content .form-group .nice-select {
@@ -1550,7 +1582,7 @@ Check Area Style
 
 .check-form {
   -webkit-box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
-          box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
   padding: 30px;
   background-color: #ffffff;
 }
@@ -1706,7 +1738,7 @@ Facilities Area Style
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   -webkit-box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
-          box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
 }
 
 .single-facilities-wrap .single-facilities .facilities-icon {
@@ -1745,7 +1777,7 @@ Facilities Area Style
 
 .single-facilities-wrap .single-facilities:hover {
   -webkit-transform: translateY(-5px);
-          transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 .single-facilities-wrap .single-facilities:hover::after {
@@ -1754,8 +1786,8 @@ Facilities Area Style
 
 .single-facilities-wrap .single-facilities:hover .facilities-icon {
   color: #ffffff;
-  -webkit-animation: fadeInDown  1s linear;
-          animation: fadeInDown  1s linear;
+  -webkit-animation: fadeInDown 1s linear;
+  animation: fadeInDown 1s linear;
 }
 
 .single-facilities-wrap .single-facilities:hover h3 {
@@ -1769,7 +1801,7 @@ Facilities Area Style
 .single-facilities-wrap .single-facilities:hover .icon-btn {
   background-color: #ffffff;
   -webkit-animation: fadeInUp 1s linear;
-          animation: fadeInUp 1s linear;
+  animation: fadeInUp 1s linear;
 }
 
 /*
@@ -1851,7 +1883,7 @@ Rooms Area Style
   position: relative;
   background-color: #ffffff;
   -webkit-box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
-          box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
   padding: 30px;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -1869,7 +1901,7 @@ Rooms Area Style
   top: 50%;
   left: 23px;
   -webkit-transform: translateY(-48%);
-          transform: translateY(-48%);
+  transform: translateY(-48%);
   background-color: #eee;
   max-width: 150px;
   z-index: 1;
@@ -1951,7 +1983,7 @@ Rooms Area Style
 
 .our-rooms-wrap.owl-theme .owl-nav .owl-prev:hover i {
   -webkit-animation: fadeInRight 1s linear;
-          animation: fadeInRight 1s linear;
+  animation: fadeInRight 1s linear;
 }
 
 .our-rooms-wrap.owl-theme .owl-nav .owl-next {
@@ -1980,7 +2012,7 @@ Rooms Area Style
 
 .our-rooms-wrap.owl-theme .owl-nav .owl-next:hover i {
   -webkit-animation: fadeInLeft 1s linear;
-          animation: fadeInLeft 1s linear;
+  animation: fadeInLeft 1s linear;
 }
 
 .our-rooms-wrap.owl-theme .owl-nav [class*=owl-]:hover {
@@ -2064,7 +2096,7 @@ City View Area Style
 .city-view-area .city-wrap {
   background-color: #ffffff;
   -webkit-box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
-          box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
   max-width: 600px;
   padding: 40px;
   margin: auto;
@@ -2094,7 +2126,7 @@ City View Area Style
   line-height: 43px;
   display: block;
   -webkit-box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
-          box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
   background-color: #ffffff;
   display: inline-block;
   border-radius: 50%;
@@ -2105,7 +2137,7 @@ City View Area Style
   top: 50%;
   left: -60px;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   transition: all 0.5s;
 }
 
@@ -2124,7 +2156,7 @@ City View Area Style
 
 .city-view-area .owl-theme .owl-nav .owl-prev:hover i {
   -webkit-animation: fadeInRight 1s linear;
-          animation: fadeInRight 1s linear;
+  animation: fadeInRight 1s linear;
 }
 
 .city-view-area .owl-theme .owl-nav .owl-next {
@@ -2137,12 +2169,12 @@ City View Area Style
   border-radius: 50%;
   color: #cc8c18;
   -webkit-box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
-          box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
   position: absolute;
   top: 50%;
   right: -60px;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
@@ -2162,7 +2194,7 @@ City View Area Style
 
 .city-view-area .owl-theme .owl-nav .owl-next:hover i {
   -webkit-animation: fadeInLeft 1s linear;
-          animation: fadeInLeft 1s linear;
+  animation: fadeInLeft 1s linear;
 }
 
 .city-view-area .owl-theme .owl-nav [class*=owl-]:hover {
@@ -2190,7 +2222,7 @@ Exclusive View Area Style
 .exclusive-content {
   background-color: #ffffff;
   -webkit-box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
-          box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
   padding: 20px;
 }
 
@@ -2258,7 +2290,7 @@ Exclusive View Area Style
 
 .exclusive-area .exclusive-wrap:hover {
   -webkit-transform: translateY(-5px);
-          transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 /*
@@ -2266,8 +2298,8 @@ Booking Area Style
 ======================================================*/
 .booking-col-2 {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 20%;
-          flex: 0 0 20%;
+  -ms-flex: 0 0 20%;
+  flex: 0 0 20%;
   max-width: 20%;
   padding-left: 15px;
   padding-right: 15px;
@@ -2276,7 +2308,7 @@ Booking Area Style
 .booking-col-2 .single-booking {
   background-color: #ffffff;
   -webkit-box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
-          box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   overflow: hidden;
@@ -2312,7 +2344,7 @@ Booking Area Style
 .booking-col-2 .btn {
   background-color: transparent;
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   text-align: center !important;
 }
 
@@ -2323,7 +2355,7 @@ Booking Area Style
 .booking-col-2:hover .book-icon {
   color: #ffffff;
   -webkit-animation: fadeInDown 0.5s linear;
-          animation: fadeInDown 0.5s linear;
+  animation: fadeInDown 0.5s linear;
 }
 
 .booking-col-2:hover .booking-title {
@@ -2508,7 +2540,7 @@ Testimonials Area Style
 
 .single-testimonials:hover {
   -webkit-transform: translateY(-5px);
-          transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 .testimonials-wrap.owl-carousel .owl-item img {
@@ -2540,12 +2572,12 @@ News Area Style
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   -webkit-clip-path: polygon(0 0, 0% 100%, 100% 0);
-          clip-path: polygon(0 0, 0% 100%, 100% 0);
+  clip-path: polygon(0 0, 0% 100%, 100% 0);
 }
 
 .single-news .news-img .dates span {
   -webkit-transform: rotate(-40deg);
-          transform: rotate(-40deg);
+  transform: rotate(-40deg);
   display: inline-block;
   position: relative;
   left: -20px;
@@ -2556,7 +2588,7 @@ News Area Style
 .single-news .news-content-wrap {
   background-color: #ffffff;
   -webkit-box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
-          box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
   padding: 30px;
 }
 
@@ -2596,7 +2628,7 @@ News Area Style
 
 .single-news:hover {
   -webkit-transform: translateY(-5px);
-          transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 .single-news:hover .news-content-wrap a h3 {
@@ -2605,7 +2637,7 @@ News Area Style
 
 .single-news:hover .news-content-wrap .read-more i {
   -webkit-animation: fadeInLeft 1s linear;
-          animation: fadeInLeft 1s linear;
+  animation: fadeInLeft 1s linear;
 }
 
 /*
@@ -2701,12 +2733,12 @@ Footer Top Area Style
 .single-widget ul li a:hover {
   color: #cc8c18;
   -webkit-transform: translateX(5px);
-          transform: translateX(5px);
+  transform: translateX(5px);
 }
 
 .single-widget ul li a:hover i {
   -webkit-animation: fadeInLeft 0.5s linear;
-          animation: fadeInLeft 0.5s linear;
+  animation: fadeInLeft 0.5s linear;
 }
 
 .single-widget .information li {
@@ -2720,7 +2752,7 @@ Footer Top Area Style
 
 .single-widget .information li a:hover {
   -webkit-transform: translateX(0);
-          transform: translateX(0);
+  transform: translateX(0);
 }
 
 .single-widget .information li.address {
@@ -2768,9 +2800,9 @@ Footer Top Area Style
 
 .single-widget .social-icon li a:hover {
   -webkit-transform: translateX(0px);
-          transform: translateX(0px);
+  transform: translateX(0px);
   -webkit-animation: rubberBand 1s linear;
-          animation: rubberBand 1s linear;
+  animation: rubberBand 1s linear;
   color: #ffffff;
   background-color: #cc8c18;
 }
@@ -2851,7 +2883,7 @@ Footer Bottom Area Style
   top: 2px;
   color: #cc8c18;
   -webkit-animation: heartBeat 1000ms infinite linear;
-          animation: heartBeat 1000ms infinite linear;
+  animation: heartBeat 1000ms infinite linear;
 }
 
 .footer-bottom-area .designed a {
@@ -2894,16 +2926,16 @@ Header Area Style
 
 .header-area .heder-top-area .social-link li a:hover {
   -webkit-transform: translateX(0px);
-          transform: translateX(0px);
+  transform: translateX(0px);
   -webkit-animation: rubberBand 1s linear;
-          animation: rubberBand 1s linear;
+  animation: rubberBand 1s linear;
   color: #ffffff;
   background-color: #cc8c18;
 }
 
 .header-area .heder-top-area .social-link li a:hover i {
   -webkit-animation: fadeInLeft 0.5s linear;
-          animation: fadeInLeft 0.5s linear;
+  animation: fadeInLeft 0.5s linear;
 }
 
 .header-area .heder-top-area .location {
@@ -2971,7 +3003,7 @@ Header Area Style
   border-radius: 50%;
   background-color: #ffffff;
   -webkit-box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.05);
-          box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.05);
   position: absolute;
   font-size: 30px;
   left: -90px;
@@ -3121,7 +3153,7 @@ Our Rooms Area Two Style
 .our-rooms-area-two .single-rooms {
   background-color: #ffffff;
   -webkit-box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
-          box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   overflow: hidden;
@@ -3164,7 +3196,7 @@ Our Rooms Area Two Style
 .our-rooms-area-two .single-rooms:hover i {
   color: #ffffff;
   -webkit-animation: fadeInDown 0.5s linear;
-          animation: fadeInDown 0.5s linear;
+  animation: fadeInDown 0.5s linear;
 }
 
 .our-rooms-area-two .single-rooms:hover span {
@@ -3342,7 +3374,7 @@ Choose Restaurant Area Style
 .choose-restaurant-area .choose-tab-wrap .choose-tab .tabs {
   background-color: transparent;
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   margin-bottom: 34px;
   line-height: 1;
   position: relative;
@@ -3428,7 +3460,7 @@ Exclusive Offers Area Style
 
 .exclusive-offers-area .exclusive-content:hover {
   -webkit-transform: translateY(-5px);
-          transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 /*
@@ -3441,7 +3473,7 @@ Testimonials Area Two Style
 .testimonials-area-two .testimonials-wrap-two {
   background-color: #ffffff;
   -webkit-box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
-          box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
   padding: 30px 30px 60px 30px;
   margin: 30px;
   max-width: 900px;
@@ -3505,7 +3537,7 @@ Testimonials Area Two Style
 
 .testimonials-area-two .single-testimonials:hover {
   -webkit-transform: translateY(-5px);
-          transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 .testimonials-area-two .testimonials-content {
@@ -3575,17 +3607,17 @@ Slider Gallery Area Two Style
   width: 100%;
   height: 100%;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   z-index: 1;
   -webkit-transform: scale(0);
-          transform: scale(0);
+  transform: scale(0);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
@@ -3597,13 +3629,13 @@ Slider Gallery Area Two Style
 
 .single-slider-gallery:hover .instagram-link {
   -webkit-transform: scale(1);
-          transform: scale(1);
+  transform: scale(1);
 }
 
 .single-slider-gallery:hover::before {
   height: 100%;
   -webkit-animation: fadeInRight 0.5s linear;
-          animation: fadeInRight 0.5s linear;
+  animation: fadeInRight 0.5s linear;
 }
 
 /*
@@ -3705,7 +3737,7 @@ Slider Area Three Style
 .eorik-slider-area-three .social-link ul .follow {
   color: #cc8c18;
   -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  transform: rotate(90deg);
   position: relative;
   left: -15px;
   top: -25px;
@@ -3736,7 +3768,7 @@ Our Rooms Area Three Style
   position: relative;
   background-color: #ffffff;
   -webkit-box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
-          box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
   margin-bottom: 30px;
   text-align-last: center;
 }
@@ -3744,7 +3776,7 @@ Our Rooms Area Three Style
 .single-rooms-three .single-rooms-three-content {
   background-color: #ffffff;
   -webkit-box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
-          box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
   padding: 30px;
   position: absolute;
   bottom: -112px;
@@ -3821,7 +3853,7 @@ Explore Area Three Style
   background-size: cover;
   height: 100%;
   -webkit-box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
-          box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
   border: 10px solid #ffffff;
 }
 
@@ -3836,7 +3868,7 @@ Explore Area Three Style
   background-size: cover;
   height: 100%;
   -webkit-box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
-          box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
   border: 10px solid #ffffff;
 }
 
@@ -3891,7 +3923,7 @@ Customer Area Two  Style
   text-align: center;
   background-color: #ffffff;
   -webkit-box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
-          box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
   padding: 30px;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -3928,7 +3960,7 @@ Customer Area Two  Style
 .customer-area .owl-item.active.center .single-customer {
   opacity: 1;
   -webkit-animation: rotateIn 1s linear;
-          animation: rotateIn 1s linear;
+  animation: rotateIn 1s linear;
 }
 
 .customer-area .owl-theme .owl-dots {
@@ -4000,7 +4032,7 @@ Contact Us Area Two  Style
   left: 0;
   width: 400px;
   -webkit-animation: moVebounce 5s linear infinite;
-          animation: moVebounce 5s linear infinite;
+  animation: moVebounce 5s linear infinite;
 }
 
 .contact-us-area .contact-shape img:nth-child(2) {
@@ -4008,7 +4040,7 @@ Contact Us Area Two  Style
   right: 0;
   max-width: 400px;
   -webkit-animation: rotation 30s linear infinite;
-          animation: rotation 30s linear infinite;
+  animation: rotation 30s linear infinite;
 }
 
 /* 
@@ -4139,19 +4171,19 @@ Eorik Nav Style Four
 
 .eorik-nav-style-four .others-option .sidebar-button:hover {
   -webkit-animation: rubberBand 1s linear;
-          animation: rubberBand 1s linear;
+  animation: rubberBand 1s linear;
 }
 
 .eorik-nav-style-four .others-option .sidebar-button:hover span:nth-child(2) {
   border-color: #cc8c18;
   -webkit-animation: fadeOut 1s linear;
-          animation: fadeOut 1s linear;
+  animation: fadeOut 1s linear;
 }
 
 .eorik-nav-style-four .others-option .sidebar-button:hover span:nth-child(3) {
   border-color: #cc8c18;
   -webkit-animation: fadeOut 1s linear;
-          animation: fadeOut 1s linear;
+  animation: fadeOut 1s linear;
 }
 
 /*
@@ -4171,7 +4203,7 @@ Sidebar Modal Area Style
   width: 450px;
   height: 100%;
   -webkit-transform: translate3d(0%, 0, 0);
-          transform: translate3d(0%, 0, 0);
+  transform: translate3d(0%, 0, 0);
 }
 
 .sidebar-modal .modal.right .modal-content {
@@ -4323,7 +4355,7 @@ Sidebar Modal Area Style
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   -webkit-animation: rotateIn 1000ms linear;
-          animation: rotateIn 1000ms linear;
+  animation: rotateIn 1000ms linear;
 }
 
 .sidebar-modal .modal.right.fade .modal-dialog {
@@ -4331,7 +4363,7 @@ Sidebar Modal Area Style
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   -webkit-animation: rotateIn 1000ms linear;
-          animation: rotateIn 1000ms linear;
+  animation: rotateIn 1000ms linear;
 }
 
 .sidebar-modal .modal-header {
@@ -4420,19 +4452,19 @@ Ecorik Slider Area Four Style
   z-index: 9999;
 }
 
-.eorik-slider-area-four.eorik-slider-area .owl-theme .owl-nav.disabled + .owl-dots {
+.eorik-slider-area-four.eorik-slider-area .owl-theme .owl-nav.disabled+.owl-dots {
   bottom: 50px;
 }
 
 .check-area-four {
   background-color: #ffffff;
   -webkit-box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
-          box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
 }
 
 .check-area-four .check-form {
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 /*
@@ -4576,7 +4608,7 @@ Facilities Area Four Style
   line-height: 80px;
   background-color: #ffffff;
   -webkit-box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
-          box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
   color: #cc8c18;
   border-radius: 50%;
   text-align: center;
@@ -4664,7 +4696,7 @@ Exclusive Offers Area Four Style
 
 .exclusive-offers-area-four .single-exclusive-four:hover {
   -webkit-transform: translateY(-5px);
-          transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 /*
@@ -4719,7 +4751,7 @@ Customer Offers Area Four Style
   line-height: 43px;
   display: block;
   -webkit-box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
-          box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
   background-color: #ffffff;
   display: inline-block;
   border-radius: 50%;
@@ -4730,7 +4762,7 @@ Customer Offers Area Four Style
   top: 50%;
   left: -25px;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   transition: all 0.5s;
 }
 
@@ -4749,7 +4781,7 @@ Customer Offers Area Four Style
 
 .customer-area-four .customer-wrap-four.owl-theme .owl-nav .owl-prev:hover i {
   -webkit-animation: fadeInRight 1s linear;
-          animation: fadeInRight 1s linear;
+  animation: fadeInRight 1s linear;
 }
 
 .customer-area-four .customer-wrap-four.owl-theme .owl-nav .owl-next {
@@ -4762,12 +4794,12 @@ Customer Offers Area Four Style
   border-radius: 50%;
   color: #cc8c18;
   -webkit-box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
-          box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
   position: absolute;
   top: 50%;
   right: -25px;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
@@ -4787,7 +4819,7 @@ Customer Offers Area Four Style
 
 .customer-area-four .customer-wrap-four.owl-theme .owl-nav .owl-next:hover i {
   -webkit-animation: fadeInLeft 1s linear;
-          animation: fadeInLeft 1s linear;
+  animation: fadeInLeft 1s linear;
 }
 
 .customer-area-four .customer-wrap-four.owl-theme .owl-nav [class*=owl-]:hover {
@@ -4835,7 +4867,7 @@ News Area Four Style
   line-height: 43px;
   display: block;
   -webkit-box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
-          box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
   background-color: #ffffff;
   display: inline-block;
   border-radius: 50%;
@@ -4846,7 +4878,7 @@ News Area Four Style
   top: 50%;
   left: -25px;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   transition: all 0.5s;
 }
 
@@ -4865,7 +4897,7 @@ News Area Four Style
 
 .news-area-four .owl-theme .owl-nav .owl-prev:hover i {
   -webkit-animation: fadeInRight 1s linear;
-          animation: fadeInRight 1s linear;
+  animation: fadeInRight 1s linear;
 }
 
 .news-area-four .owl-theme .owl-nav .owl-next {
@@ -4878,12 +4910,12 @@ News Area Four Style
   border-radius: 50%;
   color: #cc8c18;
   -webkit-box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
-          box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
   position: absolute;
   top: 50%;
   right: -25px;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
@@ -4903,7 +4935,7 @@ News Area Four Style
 
 .news-area-four .owl-theme .owl-nav .owl-next:hover i {
   -webkit-animation: fadeInLeft 1s linear;
-          animation: fadeInLeft 1s linear;
+  animation: fadeInLeft 1s linear;
 }
 
 .news-area-four .owl-theme .owl-nav [class*=owl-]:hover {
@@ -5060,7 +5092,7 @@ Ecorik Slider Area Five Style
 
 .eorik-slider-area-five .owl-prev:hover::before {
   -webkit-animation: fadeInRight 1s linear;
-          animation: fadeInRight 1s linear;
+  animation: fadeInRight 1s linear;
 }
 
 .eorik-slider-area-five .owl-next {
@@ -5089,7 +5121,7 @@ Ecorik Slider Area Five Style
 
 .eorik-slider-area-five .owl-next:hover::before {
   -webkit-animation: fadeInLeft 1s linear;
-          animation: fadeInLeft 1s linear;
+  animation: fadeInLeft 1s linear;
 }
 
 .eorik-slider-area-five .slider-item-bg-13 {
@@ -5118,7 +5150,7 @@ Explore Area Five Style
   height: 100%;
   border: 5px solid #ffffff;
   -webkit-box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
-          box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
 }
 
 .explore-area-five .explore-gallery.bg-1 {
@@ -5194,7 +5226,7 @@ Counter Area Five Style
 ======================================================*/
 .counter-area-five {
   overflow: hidden;
-  border-radius: 100px 0 100px  0;
+  border-radius: 100px 0 100px 0;
   margin-top: 100px;
 }
 
@@ -5238,7 +5270,7 @@ City View Area Five Style
 .city-view-area-five .container .tabs {
   background-color: transparent;
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   margin-bottom: 34px;
   line-height: 1;
   position: relative;
@@ -5364,7 +5396,7 @@ Exclusive Five Style
 
 .exclusive-offers-area-five .single-exclusive-four:hover {
   -webkit-transform: translateY(-5px);
-          transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 /*
@@ -5373,7 +5405,7 @@ Subscribe Five Style
 .subscribe-area {
   background-color: #cc8c18;
   overflow: hidden;
-  border-radius: 100px 100px 0  0;
+  border-radius: 100px 100px 0 0;
 }
 
 .subscribe-area h2 {
@@ -5523,7 +5555,7 @@ Product Area Style
   border-radius: 0;
   border: none;
   -webkit-box-shadow: 0 0 29px 0 rgba(102, 102, 102, 0.1);
-          box-shadow: 0 0 29px 0 rgba(102, 102, 102, 0.1);
+  box-shadow: 0 0 29px 0 rgba(102, 102, 102, 0.1);
   float: unset;
   height: unset;
   line-height: initial;
@@ -5534,7 +5566,7 @@ Product Area Style
 .product-area .woocommerce-topbar .woocommerce-topbar-ordering .nice-select .list {
   background-color: #ffffff;
   -webkit-box-shadow: 0 0 29px 0 rgba(102, 102, 102, 0.1);
-          box-shadow: 0 0 29px 0 rgba(102, 102, 102, 0.1);
+  box-shadow: 0 0 29px 0 rgba(102, 102, 102, 0.1);
   border-radius: 0;
   margin-top: 0;
   width: 100%;
@@ -5569,7 +5601,7 @@ Product Area Style
   margin-bottom: 30px;
   background-color: #ffffff;
   -webkit-box-shadow: 0 0 40px 3px rgba(0, 0, 0, 0.05);
-          box-shadow: 0 0 40px 3px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 40px 3px rgba(0, 0, 0, 0.05);
 }
 
 .product-area .single-product-box .product-image {
@@ -5604,7 +5636,7 @@ Product Area Style
   right: 20px;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .product-area .single-product-box .product-image .add-to-cart-btn:hover {
@@ -5684,7 +5716,7 @@ Checkout Area Style
 =====================================================*/
 .checkout-area .user-actions {
   -webkit-box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
-          box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
   background: #ffffff;
   padding: 18px 20px 15px;
   margin-bottom: 65px;
@@ -5741,7 +5773,7 @@ Checkout Area Style
   background-color: #ffffff;
   padding: 30px;
   -webkit-box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);
-          box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);
+  box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);
 }
 
 .checkout-area .billing-details .form-group {
@@ -5771,7 +5803,7 @@ Checkout Area Style
 .checkout-area .billing-details .form-group .nice-select .list {
   background-color: #ffffff;
   -webkit-box-shadow: 0px 0px 29px 0px rgba(102, 102, 102, 0.1);
-          box-shadow: 0px 0px 29px 0px rgba(102, 102, 102, 0.1);
+  box-shadow: 0px 0px 29px 0px rgba(102, 102, 102, 0.1);
   border-radius: 0;
   margin-top: 0;
   width: 100%;
@@ -5799,7 +5831,9 @@ Checkout Area Style
   right: 20px;
 }
 
-.checkout-area .billing-details .form-group .nice-select .option:hover, .checkout-area .billing-details .form-group .nice-select .option.focus, .checkout-area .billing-details .form-group .nice-select .option.selected.focus {
+.checkout-area .billing-details .form-group .nice-select .option:hover,
+.checkout-area .billing-details .form-group .nice-select .option.focus,
+.checkout-area .billing-details .form-group .nice-select .option.selected.focus {
   background-color: #cc8c18 !important;
   color: #ffffff !important;
 }
@@ -5831,7 +5865,7 @@ Checkout Area Style
   background-color: #ffffff;
   padding: 30px;
   -webkit-box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);
-          box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);
+  box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);
 }
 
 .checkout-area .order-details .order-table table {
@@ -5899,7 +5933,7 @@ Checkout Area Style
 .checkout-area .order-details .payment-box {
   background-color: #ffffff;
   -webkit-box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);
-          box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);
+  box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);
   margin-top: 30px;
   padding: 30px;
 }
@@ -5908,7 +5942,7 @@ Checkout Area Style
   display: none;
 }
 
-.checkout-area .order-details .payment-box .payment-method p [type="radio"]:checked + label {
+.checkout-area .order-details .payment-box .payment-method p [type="radio"]:checked+label {
   padding-left: 27px;
   cursor: pointer;
   display: block;
@@ -5918,7 +5952,7 @@ Checkout Area Style
   margin-bottom: 8px;
 }
 
-.checkout-area .order-details .payment-box .payment-method p [type="radio"]:checked + label::before {
+.checkout-area .order-details .payment-box .payment-method p [type="radio"]:checked+label::before {
   content: '';
   position: absolute;
   left: 0;
@@ -5930,7 +5964,7 @@ Checkout Area Style
   background: #ffffff;
 }
 
-.checkout-area .order-details .payment-box .payment-method p [type="radio"]:checked + label::after {
+.checkout-area .order-details .payment-box .payment-method p [type="radio"]:checked+label::after {
   content: '';
   width: 12px;
   height: 12px;
@@ -5944,14 +5978,14 @@ Checkout Area Style
   opacity: 1;
   visibility: visible;
   -webkit-transform: scale(1);
-          transform: scale(1);
+  transform: scale(1);
 }
 
 .checkout-area .order-details .payment-box .payment-method p [type="radio"]:not(:checked) {
   display: none;
 }
 
-.checkout-area .order-details .payment-box .payment-method p [type="radio"]:not(:checked) + label {
+.checkout-area .order-details .payment-box .payment-method p [type="radio"]:not(:checked)+label {
   padding-left: 27px;
   cursor: pointer;
   display: block;
@@ -5961,7 +5995,7 @@ Checkout Area Style
   margin-bottom: 8px;
 }
 
-.checkout-area .order-details .payment-box .payment-method p [type="radio"]:not(:checked) + label::before {
+.checkout-area .order-details .payment-box .payment-method p [type="radio"]:not(:checked)+label::before {
   content: '';
   position: absolute;
   left: 0;
@@ -5973,7 +6007,7 @@ Checkout Area Style
   background: #ffffff;
 }
 
-.checkout-area .order-details .payment-box .payment-method p [type="radio"]:not(:checked) + label::after {
+.checkout-area .order-details .payment-box .payment-method p [type="radio"]:not(:checked)+label::after {
   content: '';
   width: 12px;
   height: 12px;
@@ -5987,7 +6021,7 @@ Checkout Area Style
   opacity: 0;
   visibility: hidden;
   -webkit-transform: scale(0);
-          transform: scale(0);
+  transform: scale(0);
 }
 
 .checkout-area .order-details .payment-box .btn.order-btn {
@@ -6147,7 +6181,7 @@ Cart Area Style
   background: #ffffff;
   padding: 40px;
   -webkit-box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
-          box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
   border-radius: 0;
   margin: auto;
   margin-top: 50px;
@@ -6196,7 +6230,7 @@ Cart Area Style
 
 .cart-area .cart-wraps {
   -webkit-box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
-          box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
   background-color: #fff;
   padding: 40px;
 }
@@ -6206,7 +6240,7 @@ Cart Area Style
   background-color: #ffffff;
   padding: 40px;
   -webkit-box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
-          box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
 }
 
 .cart-area .coupon-wrap .nice-select .list {
@@ -6222,7 +6256,8 @@ Cart Area Style
   background-color: #1089d4 !important;
 }
 
-.cart-area .coupon-wrap select .option.focus, .cart-area .coupon-wrap .nice-select .option.selected.focus {
+.cart-area .coupon-wrap select .option.focus,
+.cart-area .coupon-wrap .nice-select .option.selected.focus {
   background-color: #1089d4 !important;
   color: #ffffff !important;
 }
@@ -6397,9 +6432,9 @@ Product Details Style
 .product-details-area .product-details-desc .buy-checkbox-btn .cbx {
   margin: auto;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   cursor: pointer;
 }
 
@@ -6407,7 +6442,7 @@ Product Details Style
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
 
 .product-details-area .product-details-desc .buy-checkbox-btn .cbx span:first-child {
@@ -6416,7 +6451,7 @@ Product Details Style
   height: 18px;
   border-radius: 3px;
   -webkit-transform: scale(1);
-          transform: scale(1);
+  transform: scale(1);
   vertical-align: middle;
   border: 1px solid #ebebeb;
   -webkit-transition: all 0.2s ease;
@@ -6439,9 +6474,9 @@ Product Details Style
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   -webkit-transition-delay: 0.1s;
-          transition-delay: 0.1s;
+  transition-delay: 0.1s;
   -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -6453,7 +6488,7 @@ Product Details Style
   background: #333333;
   display: block;
   -webkit-transform: scale(0);
-          transform: scale(0);
+  transform: scale(0);
   opacity: 1;
   border-radius: 50%;
   -webkit-transition: 0.5s;
@@ -6469,20 +6504,20 @@ Product Details Style
   border-color: #333333;
 }
 
-.product-details-area .product-details-desc .buy-checkbox-btn .inp-cbx:checked + .cbx span:first-child {
+.product-details-area .product-details-desc .buy-checkbox-btn .inp-cbx:checked+.cbx span:first-child {
   background: #333333;
   border-color: #333333;
   -webkit-animation: wave 0.4s ease;
-          animation: wave 0.4s ease;
+  animation: wave 0.4s ease;
 }
 
-.product-details-area .product-details-desc .buy-checkbox-btn .inp-cbx:checked + .cbx span:first-child svg {
+.product-details-area .product-details-desc .buy-checkbox-btn .inp-cbx:checked+.cbx span:first-child svg {
   stroke-dashoffset: 0;
 }
 
-.product-details-area .product-details-desc .buy-checkbox-btn .inp-cbx:checked + .cbx span:first-child:before {
+.product-details-area .product-details-desc .buy-checkbox-btn .inp-cbx:checked+.cbx span:first-child:before {
   -webkit-transform: scale(3.5);
-          transform: scale(3.5);
+  transform: scale(3.5);
   opacity: 0;
   -webkit-transition: all 0.6s ease;
   transition: all 0.6s ease;
@@ -6568,7 +6603,7 @@ Product Details Style
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   left: 30px;
   width: 12px;
   height: 12px;
@@ -6718,7 +6753,7 @@ Product Details Style
 .product-details-area .products-details-tab .tab_content .tabs_item .products-details-tab-content .product-review-form .review-title .btn:focus {
   border: none !important;
   -webkit-box-shadow: none !important;
-          box-shadow: none !important;
+  box-shadow: none !important;
   border: 4px;
   background-color: #24416b;
 }
@@ -6800,7 +6835,7 @@ Product Details Style
 
 .product-details-area .products-details-tab .tab_content .tabs_item .products-details-tab-content .product-review-form .review-form form .btn:focus {
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   border: none;
   border-radius: 0;
 }
@@ -6823,7 +6858,7 @@ Team Expert Area Two Style
   width: 100%;
   background: rgba(255, 255, 255, 0.2);
   -webkit-transform: skewX(45deg);
-          transform: skewX(45deg);
+  transform: skewX(45deg);
   -webkit-transition: .8s;
   transition: .8s;
 }
@@ -6832,7 +6867,7 @@ Team Expert Area Two Style
   width: 100%;
   height: 100%;
   -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
+  filter: grayscale(100%);
   -webkit-transition: 1s;
   transition: 1s;
 }
@@ -6845,9 +6880,9 @@ Team Expert Area Two Style
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   -webkit-transform: perspective(300px) rotateX(90deg);
-          transform: perspective(300px) rotateX(90deg);
+  transform: perspective(300px) rotateX(90deg);
   -webkit-transform-origin: bottom;
-          transform-origin: bottom;
+  transform-origin: bottom;
   text-align: center;
   padding: 10px;
 }
@@ -6879,11 +6914,11 @@ Team Expert Area Two Style
   line-height: 40px;
   border-bottom: 1px solid #19345a;
   -webkit-transform: perspective(1000px) rotateY(90deg);
-          transform: perspective(1000px) rotateY(90deg);
+  transform: perspective(1000px) rotateY(90deg);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   -webkit-transform-origin: left;
-          transform-origin: left;
+  transform-origin: left;
 }
 
 .expert-team-area .single-team ul li:hover {
@@ -6896,45 +6931,45 @@ Team Expert Area Two Style
 
 .expert-team-area .single-team ul li:nth-child(1) {
   -webkit-transition-delay: .2s;
-          transition-delay: .2s;
+  transition-delay: .2s;
 }
 
 .expert-team-area .single-team ul li:nth-child(2) {
   -webkit-transition-delay: .4s;
-          transition-delay: .4s;
+  transition-delay: .4s;
 }
 
 .expert-team-area .single-team ul li:nth-child(3) {
   -webkit-transition-delay: .6s;
-          transition-delay: .6s;
+  transition-delay: .6s;
 }
 
 .expert-team-area .single-team ul li:nth-child(4) {
   -webkit-transition-delay: .8s;
-          transition-delay: .8s;
+  transition-delay: .8s;
 }
 
 .expert-team-area .single-team:hover:before {
   left: -170%;
   -webkit-transition-delay: .8s;
-          transition-delay: .8s;
+  transition-delay: .8s;
 }
 
 .expert-team-area .single-team:hover img {
   -webkit-filter: grayscale(0);
-          filter: grayscale(0);
+  filter: grayscale(0);
   -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .expert-team-area .single-team:hover .team-content {
   -webkit-transform: perspective(300px) rotateX(0deg);
-          transform: perspective(300px) rotateX(0deg);
+  transform: perspective(300px) rotateX(0deg);
 }
 
 .expert-team-area .single-team:hover ul li {
   -webkit-transform: rotateX(0deg);
-          transform: rotateX(0deg);
+  transform: rotateX(0deg);
 }
 
 /*
@@ -6944,7 +6979,7 @@ Pricing Area Style
   text-align: center;
   background-color: #ffffff;
   -webkit-box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
-          box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
   padding: 30px;
   position: relative;
   z-index: 1;
@@ -6979,7 +7014,7 @@ Pricing Area Style
   margin: 0 auto 20px;
   background-color: #ffffff;
   -webkit-box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
-          box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
   width: 120px;
   height: 120px;
   line-height: 120px;
@@ -7029,7 +7064,7 @@ Pricing Area Style
 
 .pricing-area .single-pricing:hover {
   -webkit-transform: translateY(-5px);
-          transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 .pricing-area .popular {
@@ -7041,7 +7076,7 @@ Pricing Area Style
   color: #fff;
   padding: 35px 40px 10px 35px;
   -webkit-transform: rotate(315deg);
-          transform: rotate(315deg);
+  transform: rotate(315deg);
 }
 
 .pricing-area .tab.quote-list-tab {
@@ -7091,7 +7126,7 @@ FAQ CSS
   border-radius: 5px;
   display: block;
   -webkit-box-shadow: 2px 8px 20px 0 rgba(25, 42, 70, 0.13) !important;
-          box-shadow: 2px 8px 20px 0 rgba(25, 42, 70, 0.13) !important;
+  box-shadow: 2px 8px 20px 0 rgba(25, 42, 70, 0.13) !important;
   background: #ffffff;
   margin-bottom: 15px;
 }
@@ -7121,7 +7156,7 @@ FAQ CSS
 
 .faq-accordion .accordion .accordion-title.active i {
   -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .faq-accordion .accordion .accordion-content {
@@ -7155,7 +7190,7 @@ Ask Question Area Style
 .ask-question {
   background-color: #ffffff;
   -webkit-box-shadow: 0px 0px 29px 0px rgba(102, 102, 102, 0.08);
-          box-shadow: 0px 0px 29px 0px rgba(102, 102, 102, 0.08);
+  box-shadow: 0px 0px 29px 0px rgba(102, 102, 102, 0.08);
   padding: 50px;
   position: relative;
 }
@@ -7219,7 +7254,7 @@ Sign In & Log In  Area Style
   background-color: #ffffff;
   border-radius: 4px;
   -webkit-box-shadow: 0 0 40px rgba(82, 85, 90, 0.1);
-          box-shadow: 0 0 40px rgba(82, 85, 90, 0.1);
+  box-shadow: 0 0 40px rgba(82, 85, 90, 0.1);
   padding: 40px;
   max-width: 570px;
   margin: auto;
@@ -7652,9 +7687,9 @@ Book Table Area Style
   right: 20px;
   top: 50%;
   -webkit-transform-origin: 66% 66%;
-          transform-origin: 66% 66%;
+  transform-origin: 66% 66%;
   -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
   -webkit-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
 }
@@ -7682,7 +7717,7 @@ Coming Soon Area Style
   width: 800px;
   height: 100%;
   -webkit-animation: border-transform 7s linear infinite alternate forwards;
-          animation: border-transform 7s linear infinite alternate forwards;
+  animation: border-transform 7s linear infinite alternate forwards;
   background-image: url(../../assets/img/coming-soon-bg.jpg);
   background-position: center center;
   background-repeat: no-repeat;
@@ -7840,48 +7875,64 @@ Coming Soon Area Style
 }
 
 @-webkit-keyframes border-transform {
-  0%, 100% {
+
+  0%,
+  100% {
     border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%;
   }
+
   14% {
     border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%;
   }
+
   28% {
     border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%;
   }
+
   42% {
     border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%;
   }
+
   56% {
     border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%;
   }
+
   70% {
     border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%;
   }
+
   84% {
     border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%;
   }
 }
 
 @keyframes border-transform {
-  0%, 100% {
+
+  0%,
+  100% {
     border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%;
   }
+
   14% {
     border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%;
   }
+
   28% {
     border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%;
   }
+
   42% {
     border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%;
   }
+
   56% {
     border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%;
   }
+
   70% {
     border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%;
   }
+
   84% {
     border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%;
   }
@@ -8026,7 +8077,7 @@ News Details Area Style
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   margin-right: -10px;
   margin-left: -10px;
   margin-bottom: 30px;
@@ -8035,8 +8086,8 @@ News Details Area Style
 
 .news-details-area .news-details-desc .article-content .wp-block-gallery.columns-3 li {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 33.3333%;
-          flex: 0 0 33.3333%;
+  -ms-flex: 0 0 33.3333%;
+  flex: 0 0 33.3333%;
   max-width: 33.3333%;
   padding-right: 10px;
   padding-left: 10px;
@@ -8051,14 +8102,14 @@ News Details Area Style
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   margin-top: 30px;
 }
 
 .news-details-area .news-details-desc .article-footer .article-tags {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 50%;
-          flex: 0 0 50%;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
   max-width: 50%;
 }
 
@@ -8083,8 +8134,8 @@ News Details Area Style
 
 .news-details-area .news-details-desc .article-footer .article-share {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 50%;
-          flex: 0 0 50%;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
   max-width: 50%;
 }
 
@@ -8120,7 +8171,7 @@ News Details Area Style
 
 .news-details-area .news-details-desc .article-footer .article-share .social li a:hover {
   -webkit-animation: rubberBand 1s linear;
-          animation: rubberBand 1s linear;
+  animation: rubberBand 1s linear;
 }
 
 .news-details-area .news-details-desc .post-navigation {
@@ -8187,13 +8238,13 @@ News Details Area Style
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .news-details-area .post-navigation .navigation-links .nav-previous {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 50%;
-          flex: 0 0 50%;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
   max-width: 50%;
 }
 
@@ -8206,8 +8257,8 @@ News Details Area Style
 
 .news-details-area .post-navigation .navigation-links .nav-next {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 50%;
-          flex: 0 0 50%;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
   max-width: 50%;
   text-align: right;
 }
@@ -8233,7 +8284,7 @@ News Details Area Style
   padding: 25px;
   margin-top: 30px;
   -webkit-box-shadow: 0px 0px 29px 0px rgba(102, 102, 102, 0.08);
-          box-shadow: 0px 0px 29px 0px rgba(102, 102, 102, 0.08);
+  box-shadow: 0px 0px 29px 0px rgba(102, 102, 102, 0.08);
   background-color: #ffffff;
 }
 
@@ -8253,7 +8304,7 @@ News Details Area Style
   background: #cc8c18;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .news-details-area .comments-area ol {
@@ -8378,7 +8429,7 @@ News Details Area Style
   background: #cc8c18;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .news-details-area .comments-area .comment-respond .comment-reply-title #cancel-comment-reply-link {
@@ -8652,7 +8703,7 @@ News Details Area Style
   margin-top: 35px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 0px 29px 0px rgba(102, 102, 102, 0.08);
-          box-shadow: 0px 0px 29px 0px rgba(102, 102, 102, 0.08);
+  box-shadow: 0px 0px 29px 0px rgba(102, 102, 102, 0.08);
 }
 
 .news-details-area .widget-area .widget .post-wrap {
@@ -8885,7 +8936,7 @@ News Details Area Style
   left: 0;
   top: 8px;
   -webkit-clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
-          clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+  clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
 }
 
 .news-details-area .widget-area .widget_categories ul li a {
@@ -8948,7 +8999,7 @@ News Details Area Style
   left: 0;
   top: 8px;
   -webkit-clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
-          clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+  clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
 }
 
 .news-details-area .widget-area .widget_tag_cloud .post-wrap {
@@ -8986,7 +9037,7 @@ News Details Area Style
   list-style-type: none;
   margin-bottom: 0;
   -webkit-box-shadow: 0 0 1.25rem rgba(108, 118, 134, 0.04);
-          box-shadow: 0 0 1.25rem rgba(108, 118, 134, 0.04);
+  box-shadow: 0 0 1.25rem rgba(108, 118, 134, 0.04);
   background-color: #ffffff;
 }
 
@@ -9022,7 +9073,7 @@ News Details Area Style
   right: 15px;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .news-details-area .widget-area .widget_services_list ul li a:hover {
@@ -9058,7 +9109,7 @@ News Details Area Style
   list-style-type: none;
   margin-bottom: 0;
   -webkit-box-shadow: 0 0 1.25rem rgba(108, 118, 134, 0.04);
-          box-shadow: 0 0 1.25rem rgba(108, 118, 134, 0.04);
+  box-shadow: 0 0 1.25rem rgba(108, 118, 134, 0.04);
   background-color: #ffffff;
 }
 
@@ -9094,7 +9145,7 @@ News Details Area Style
   right: 15px;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .news-details-area .widget-area .widget_download ul li a:hover {
@@ -9138,7 +9189,7 @@ Contact Info Area Style
 .contact-info-area .single-contact-info {
   text-align: center;
   -webkit-box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
-          box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
   background-color: #ffffff;
   margin-bottom: 30px;
   padding: 30px;
@@ -9222,7 +9273,7 @@ Main Contact Area Style
 .main-contact-area .contact-wrap .contact-form {
   background-color: #ffffff;
   -webkit-box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
-          box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
   padding: 47px;
 }
 
@@ -9258,7 +9309,7 @@ Service Details Area Style
   margin-bottom: 30px;
   background-color: #ffffff;
   -webkit-box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
-          box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
 }
 
 .service-sidebar-area .service-list ul li {
@@ -9311,7 +9362,7 @@ Service Details Area Style
 
 .service-sidebar-area .service-faq .faq-accordion .accordion .accordion-item {
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 .service-sidebar-area .service-faq .faq-accordion .accordion .accordion-title {
@@ -9440,7 +9491,7 @@ Service Details Area Style
   line-height: 43px;
   display: block;
   -webkit-box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
-          box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
   background-color: #ffffff;
   display: inline-block;
   border-radius: 50%;
@@ -9451,7 +9502,7 @@ Service Details Area Style
   top: 50%;
   left: -25px;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   transition: all 0.5s;
 }
 
@@ -9470,7 +9521,7 @@ Service Details Area Style
 
 .service-details-wrap .owl-theme .owl-nav .owl-prev:hover i {
   -webkit-animation: fadeInRight 1s linear;
-          animation: fadeInRight 1s linear;
+  animation: fadeInRight 1s linear;
 }
 
 .service-details-wrap .owl-theme .owl-nav .owl-next {
@@ -9483,12 +9534,12 @@ Service Details Area Style
   border-radius: 50%;
   color: #cc8c18;
   -webkit-box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
-          box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
   position: absolute;
   top: 50%;
   right: -25px;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
@@ -9508,7 +9559,7 @@ Service Details Area Style
 
 .service-details-wrap .owl-theme .owl-nav .owl-next:hover i {
   -webkit-animation: fadeInLeft 1s linear;
-          animation: fadeInLeft 1s linear;
+  animation: fadeInLeft 1s linear;
 }
 
 .service-details-wrap .owl-theme .owl-nav [class*=owl-]:hover {
@@ -9689,6 +9740,7 @@ Gallery Area Style
 
 .single-gallery:hover .gallery-image img {
   -webkit-transform: scale(2.3) rotate(4deg);
-          transform: scale(2.3) rotate(4deg);
+  transform: scale(2.3) rotate(4deg);
 }
+
 /*# sourceMappingURL=style.css.map */
