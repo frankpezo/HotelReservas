@@ -15,6 +15,7 @@ class Servicio extends Controller{
     /*    $data = slugify("Hola a todo el mundo");
      print_r($data); */ 
      $data['title'] = "Servicios";
+     $data['subtitle'] = "Nuestros servicios";
      $this->views->getView("principal/servicios/index",  $data);
     }
 

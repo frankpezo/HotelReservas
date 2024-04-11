@@ -15,6 +15,7 @@ class Habitacion extends Controller{
     /*    $data = slugify("Hola a todo el mundo");
      print_r($data); */ 
      $data['title'] = "Habitaciones";
+     $data['subtitle'] = "Habitaciones con estilo";
      $this->views->getView("principal/habitacion/index",  $data);
     }
 

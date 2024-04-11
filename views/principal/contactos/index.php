@@ -1,22 +1,9 @@
 <?php
 //1. Incluimos el header
  include_once 'views/template/header-principal.php';
+//3. Incluimos la portada
+include_once 'views/template/portada.php';
 ?>
-<div class="page-title-area">
-			<div class="container">
-				<div class="page-title-content">
-					<h2>Contactos</h2>
-					<ul>
-						<li>
-							<a href="index.html">
-								Home 
-							</a>
-						</li>
-						<li>Room</li>
-						<li>Room Style Two</li>
-					</ul>
-				</div>
-			</div>
 
 	<!-- Start Contact Area -->
 	<section class="main-contact-area contact-info-area contact-info-three pt-100 pb-70">

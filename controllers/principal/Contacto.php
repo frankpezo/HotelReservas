@@ -15,6 +15,7 @@ class Contacto extends Controller{
     /*    $data = slugify("Hola a todo el mundo");
      print_r($data); */ 
      $data['title'] = "Contacto";
+     $data['subtitle'] = "Contáctenos";
      $this->views->getView("principal/Contactos/index",  $data);
     }
 
